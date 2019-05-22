@@ -1,0 +1,156 @@
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 64, in control
+    elif self.mainMenu.score_button.get_clicked():
+AttributeError: 'MainMenu' object has no attribute 'score_button'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 64, in control
+    elif self.mainMenu.score_button.get_clicked():
+AttributeError: 'MainMenu' object has no attribute 'score_button'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 64, in control
+    elif self.mainMenu.score_button.get_clicked():
+AttributeError: 'MainMenu' object has no attribute 'score_button'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 65, in control
+    elif self.mainMenu.score_button.get_clicked():
+AttributeError: 'MainMenu' object has no attribute 'score_button'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 100, in control
+    elif self.newMenu.custom_button.get_clicked():
+AttributeError: 'NewMenu' object has no attribute 'custom_button'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 432, in main_loop
+    gamePlayer.control(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/PLAYER.py", line 216, in control
+    SETTINGS.statistics['last dtaken'] += (self.health - SETTINGS.player_health)
+KeyError: 'last dtaken'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 448, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 432, in main_loop
+    gamePlayer.control(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/PLAYER.py", line 216, in control
+    SETTINGS.statistics['last dtaken'] += (self.health - SETTINGS.player_health)
+KeyError: 'last dtaken'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 155, in control
+    print(current_type, current_menu)
+NameError: name 'current_type' is not defined
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 154, in control
+    print(current_type, current_menu)
+NameError: name 'current_type' is not defined
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 405, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 155, in control
+    print(current_menu, current_type)
+NameError: name 'current_menu' is not defined
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 432, in main_loop
+    gamePlayer.control(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/PLAYER.py", line 216, in control
+    SETTINGS.statistics['last dtaken'] += (self.health - SETTINGS.player_health)
+KeyError: 'last dtaken'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 432, in main_loop
+    gamePlayer.control(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/PLAYER.py", line 216, in control
+    SETTINGS.statistics['last dtaken'] += (self.health - SETTINGS.player_health)
+KeyError: 'last dtaken'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 428, in main_loop
+    menuController.control()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 159, in control
+    if self.gMainMenu.resume_button.get_clicked() or (key[pygame.K_ESCAPE]):
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/MENU.py", line 684, in get_clicked
+    if self.rect.collidepoint(pygame.mouse.get_pos()):
+pygame.error: video system not initialized
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 451, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 436, in main_loop
+    gamePlayer.control(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/PLAYER.py", line 216, in control
+    SETTINGS.statistics['last dtaken'] += (self.health - SETTINGS.player_health)
+KeyError: 'last dtaken'
+WARNING:root:DUGA has crashed. Please send this report to MaxwellSalmon, so he can fix it.
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 452, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 221, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg*2
+KeyError: 'last ddealt'
