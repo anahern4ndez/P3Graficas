@@ -56,6 +56,14 @@ worldMap =  [
             [1, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0, 3, 0, 2],
             [2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 3, 0, 0, 0, 1],
             [2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1, 2, 1]]
+textures = {
+  "1": pygame.image.load('./pics/greystone.png'),
+  "2": pygame.image.load('./pics/colorstone.png'),
+  "3": pygame.image.load('./pics/redbrick.png'),
+  "4": pygame.image.load('./pics/wood.png'),
+  "5": pygame.image.load('./pics/mossy.png')
+}
+hand = pygame.image.load('./pics/player.png')
 
 # Closes the program 
 def close(): 
@@ -183,6 +191,7 @@ def main():
             mapX = int(rayPositionX)
             mapY = int(rayPositionY)
 
+            print(mapX, mapY)
             # Delta distance calculation
             # Delta = square ( raydir * raydir) / (raydir * raydir)
             deltaDistanceX = math.sqrt(1.0 + (rayDirectionY * rayDirectionY) / (rayDirectionX * rayDirectionX))
