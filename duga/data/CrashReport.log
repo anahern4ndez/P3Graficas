@@ -154,3 +154,55 @@ Traceback (most recent call last):
   File "/Users/polaris/Documents/5/GRAFICAS/proyecto3/Proyecto3Graficas/duga/GUNS.py", line 221, in damage
     SETTINGS.statistics['last ddealt'] += self.dmg*2
 KeyError: 'last ddealt'
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 452, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 452, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 133, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 452, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
+ERROR:root:Error message: 
+Traceback (most recent call last):
+  File "main.py", line 452, in main_loop
+    render_screen(gameCanvas.canvas)
+  File "main.py", line 289, in render_screen
+    SETTINGS.current_gun.draw(gameCanvas.canvas)
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 287, in draw
+    self.shoot_animation()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 155, in shoot_animation
+    self.damage()
+  File "/Users/polaris/Documents/5/GRAFICAS/P3Graficas/duga/GUNS.py", line 224, in damage
+    SETTINGS.statistics['last ddealt'] += self.dmg
+KeyError: 'last ddealt'
