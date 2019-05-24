@@ -8,15 +8,23 @@ class WorldManager(object):
 
     def __init__(self,worldMap,sprite_positions,x,y,dirx,diry,planex,planey):
         self.sprites = [  
-              load_image(pygame.image.load("pics/items/barrel.png").convert(), False, colorKey = (0,0,0)),
-              load_image(pygame.image.load("pics/items/pillar.png").convert(), False, colorKey = (0,0,0)),
+              
+              load_image(pygame.image.load("pics/items/barrel2.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/fern.png").convert(), False, colorKey = (0,0,0)),
               load_image(pygame.image.load("pics/items/greenlight.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/pillar.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/barrel.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/pillar2.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/greenlight.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/table.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/fern.png").convert(), False, colorKey = (0,0,0)),
+              load_image(pygame.image.load("pics/items/stone_pillar.png").convert(), False, colorKey = (0,0,0)),
         ]
         
         self.background = None
         self.images = [  
-              load_image(pygame.image.load("pics/walls/eagle.png").convert(), False),
-              load_image(pygame.image.load("pics/walls/redbrick.png").convert(), False),
+              load_image(pygame.image.load("pics/walls/bricks.png").convert(), False),
+              load_image(pygame.image.load("pics/walls/bricks.png").convert(), False),
               load_image(pygame.image.load("pics/walls/purplestone.png").convert(), False),
               load_image(pygame.image.load("pics/walls/greystone.png").convert(), False),
               load_image(pygame.image.load("pics/walls/bluestone.png").convert(), False),
@@ -24,8 +32,8 @@ class WorldManager(object):
               load_image(pygame.image.load("pics/walls/wood.png").convert(), False),
               load_image(pygame.image.load("pics/walls/colorstone.png").convert(), False),
     
-              load_image(pygame.image.load("pics/walls/eagle.png").convert(), True),
-              load_image(pygame.image.load("pics/walls/redbrick.png").convert(), True),
+              load_image(pygame.image.load("pics/walls/bricks.png").convert(), True),
+              load_image(pygame.image.load("pics/walls/bricks.png").convert(), True),
               load_image(pygame.image.load("pics/walls/purplestone.png").convert(), True),
               load_image(pygame.image.load("pics/walls/greystone.png").convert(), True),
               load_image(pygame.image.load("pics/walls/bluestone.png").convert(), True),
@@ -157,7 +165,8 @@ class WorldManager(object):
                 return 1
         #draw sprites
         
-        self.sprite_positions.sort(sprite_compare)
+        #self.sprite_positions.sort(sprite_compare)
+        self.sprite_positions.sort()
         for sprite in self.sprite_positions:
             #translate sprite position to relative to camera
             spriteX = sprite[0] - self.camera.x;
@@ -183,12 +192,12 @@ class WorldManager(object):
           
             #calculate width of the sprite
             spriteWidth = abs( int (h / (transformY)))
-            drawStartX = -spriteWidth / 2 + spritesurfaceX
-            drawEndX = spriteWidth / 2 + spritesurfaceX
+            drawStartX = int(-spriteWidth / 2 + spritesurfaceX)
+            drawEndX = int(spriteWidth / 2 + spritesurfaceX)
             
             if spriteHeight < 1000:
                 for stripe in range(drawStartX, drawEndX):
-                    texX = int(256 * (stripe - (-spriteWidth / 2 + spritesurfaceX)) * texWidth / spriteWidth) / 256
+                    texX = int((256 * (stripe - (-spriteWidth / 2 + spritesurfaceX)) * texWidth / spriteWidth) / 256)
                     #the conditions in the if are:
                     ##1) it's in front of camera plane so you don't see things behind you
                     ##2) it's on the surface (left)

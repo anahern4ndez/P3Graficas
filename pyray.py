@@ -191,7 +191,6 @@ def main():
             mapX = int(rayPositionX)
             mapY = int(rayPositionY)
 
-            print(mapX, mapY)
             # Delta distance calculation
             # Delta = square ( raydir * raydir) / (raydir * raydir)
             deltaDistanceX = math.sqrt(1.0 + (rayDirectionY * rayDirectionY) / (rayDirectionX * rayDirectionX))
