@@ -83,42 +83,6 @@ sprites = [
     (14.5,21.5,14),
 ]
 
-fps = 8
-class Weapon(object):
-    
-    def __init__(self, weaponName="shotgun", frameCount = 5):
-        self.images = []
-        self.loop = False
-        self.playing = False
-        self.frame = 0
-        self.oldTime = 0
-        for i in range(frameCount):
-            img = pygame.image.load("pics/weapons/%s%s.bmp" % (weaponName, i+1)).convert()
-            img = pygame.transform.scale2x(img)
-            img = pygame.transform.scale2x(img)
-            img.set_colorkey(img.get_at((0,0)))
-            self.images.append(img)
-    def play(self):
-        self.playing = True
-        self.loop = True
-    def stop(self):
-        self.playing = False
-        self.loop = False
-    def draw(self, surface, time):
-        if(self.playing or self.frame > 0):
-            if(time > self.oldTime + 1./fps):
-                self.frame = (self.frame+1) % len(self.images)
-                if self.frame == 0: 
-                    if self.loop:
-                        self.frame = 1
-                    else:
-                        self.playing = False
-                        
-                self.oldTime = time
-        img = self.images[self.frame]
-        surface.blit(img, (surface.get_width()/2 - img.get_width()/2, surface.get_height()-img.get_height()))
-
-
 
 # imagen: archivo de la imagen, opaco: valor alpha, color: color que tiene la imagen de fondo (que no se toma en cuenta al renderizar)
 def cargar_imagen(imagen, opaco, color = None):
@@ -236,6 +200,43 @@ def main():
             else:
                 pass 
         keyManagement(wc, moveSpeed, rotSpeed, weapon_numbers, weapons)
+
+fps = 8
+class Weapon(object):
+    
+    def __init__(self, weaponName="shotgun", frameCount = 5):
+        self.images = []
+        self.loop = False
+        self.playing = False
+        self.frame = 0
+        self.oldTime = 0
+        for i in range(frameCount):
+            img = pygame.image.load("pics/weapons/%s%s.bmp" % (weaponName, i+1)).convert()
+            img = pygame.transform.scale2x(img)
+            img = pygame.transform.scale2x(img)
+            img.set_colorkey(img.get_at((0,0)))
+            self.images.append(img)
+    def play(self):
+        self.playing = True
+        self.loop = True
+    def stop(self):
+        self.playing = False
+        self.loop = False
+    def draw(self, surface, time):
+        if(self.playing or self.frame > 0):
+            if(time > self.oldTime + 1./fps):
+                self.frame = (self.frame+1) % len(self.images)
+                if self.frame == 0: 
+                    if self.loop:
+                        self.frame = 1
+                    else:
+                        self.playing = False
+                        
+                self.oldTime = time
+        img = self.images[self.frame]
+        surface.blit(img, (surface.get_width()/2 - img.get_width()/2, surface.get_height()-img.get_height()))
+
+
 
 if __name__ == '__main__':
     main()
